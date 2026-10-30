@@ -27,7 +27,7 @@
                     colors: {
                         darkBg: '#090d16',
                         cardBg: '#121824',
-                        cardBorder: '#1e29b',
+                        cardBorder: '#1e293b',
                     },
                     boxShadow: {
                         'neon-blue': '0 0 20px rgba(14, 165, 233, 0.4)',
@@ -90,7 +90,7 @@
         <!-- Hero Branding Section -->
         <div class="text-center space-y-3">
             <div class="inline-block text-2xl sm:text-3xl font-extrabold tracking-wider uppercase bg-gradient-to-r from-pink-500 via-purple-500 to-sky-400 bg-clip-text text-transparent">
-                FilmySky <span class="text-white font-black"></span>
+                FilmySky
             </div>
             <h1 class="text-xl sm:text-2xl font-bold leading-snug text-white px-2">
                 FilmySky – The Ultimate Free Movie Hub for Every Film Lover
@@ -137,9 +137,37 @@
             </a>
         </div>
 
+        <!-- Instant Content Container (Pre-rendered for Googlebot - No "Loading..." text) -->
+        <div id="movieContainer" class="w-full space-y-3">
+            <h3 class="text-sm font-bold text-white px-1">🔥 Latest Instant Releases</h3>
+            
+            <!-- Movie Card 1 -->
+            <div class="bg-cardBg border border-cardBorder rounded-2xl p-3 flex items-center justify-between shadow-glow">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-sky-400 font-bold text-xs">4K</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">Latest Blockbuster Movie (2026)</h4>
+                        <p class="text-[10px] text-gray-400">Hindi • English • Dual Audio</p>
+                    </div>
+                </div>
+                <a href="https://filmyskywebsite.netlify.app" class="px-3 py-1.5 bg-sky-600 text-white rounded-xl text-xs font-semibold">Download</a>
+            </div>
+
+            <!-- Movie Card 2 -->
+            <div class="bg-cardBg border border-cardBorder rounded-2xl p-3 flex items-center justify-between shadow-glow">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-16 bg-slate-800 rounded-lg flex items-center justify-center text-emerald-400 font-bold text-xs">HD</div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white">South Action Movie Dubbed</h4>
+                        <p class="text-[10px] text-gray-400">South Hindi Dubbed • 1080p</p>
+                    </div>
+                </div>
+                <a href="https://filmyskywebsite.netlify.app" class="px-3 py-1.5 bg-emerald-600 text-white rounded-xl text-xs font-semibold">Download</a>
+            </div>
+        </div>
+
         <!-- Official App v1.0 Banner Card -->
         <div class="w-full rounded-3xl bg-gradient-to-b from-black via-[#100405] to-black app-card-glow p-5 sm:p-6 text-center relative overflow-hidden">
-            <!-- Top Badge -->
             <div class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-1">OFFICIAL APP v1.0</div>
             
             <div class="text-2xl sm:text-3xl font-black text-red-600 tracking-wider mb-3">
@@ -150,7 +178,6 @@
                 FilmySky par ads se pareshan hain? Download karein FilmySky App aur payein lag-free 4K experience With Live TV.
             </p>
 
-            <!-- Feature Bullet List -->
             <div class="space-y-2.5 text-left bg-black/60 p-4 rounded-2xl border border-red-950/50 mb-6 text-xs sm:text-sm">
                 <div class="flex items-center space-x-3 text-gray-200">
                     <i class="fa-solid fa-mobile-screen text-red-500 w-4"></i>
@@ -163,7 +190,6 @@
                 <div class="flex items-center space-x-3 text-gray-200">
                     <i class="fa-solid fa-bolt text-red-500 w-4"></i>
                     <span>Zero Buffering / Lag-Free</span>
-                
                 </div>
                 <div class="flex items-center space-x-3 text-gray-200">
                     <i class="fa-solid fa-film text-red-500 w-4"></i>
@@ -175,24 +201,6 @@
                 </div>
             </div>
 
-            <!-- App Mockup Preview Graphic -->
-            <div class="my-4 flex justify-center">
-                <div class="w-48 bg-slate-900 border-4 border-slate-700 rounded-3xl p-2 shadow-2xl relative">
-                    <div class="w-16 h-3 bg-slate-700 rounded-full mx-auto mb-2"></div>
-                    <div class="bg-black rounded-2xl p-2 text-left space-y-2">
-                        <div class="flex items-center justify-between">
-                            <span class="text-[10px] font-bold text-red-500">Filmysky</span>
-                            <i class="fa-solid fa-shield-halved text-[10px] text-green-400"></i>
-                        </div>
-                        <div class="h-16 bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl flex items-center justify-center text-[11px] font-bold text-white shadow-inner">
-                            🎬 4K STREAM
-                        </div>
-                        <div class="text-[9px] text-gray-400 truncate">Latest Blockbusters Available Now</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Download APK Button -->
             <a href="https://files.catbox.moe/s2xmhp.apk" class="w-full py-4 px-6 rounded-2xl bg-red-600 hover:bg-red-500 text-white font-extrabold text-base shadow-neon-red flex items-center justify-center space-x-2 transform active:scale-95 transition-all text-center block">
                 <i class="fa-brands fa-android text-xl"></i>
                 <span>DOWNLOAD APK NOW</span>
@@ -236,7 +244,7 @@
 
     </main>
 
-    <!-- Floating Telegram Chat Button (Bottom Left) -->
+    <!-- Floating Telegram Chat Button -->
     <a href="https://t.me/filmyskywebsite" target="_blank" class="fixed bottom-20 left-4 z-50 w-12 h-12 bg-sky-500 hover:bg-sky-400 rounded-full shadow-2xl flex items-center justify-center text-white text-2xl transition transform hover:scale-110 active:scale-95">
         <i class="fa-brands fa-telegram"></i>
     </a>
